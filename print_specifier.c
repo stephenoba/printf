@@ -55,7 +55,7 @@ int print_integer(va_list args_l)
 }
 
 /**
- * unsigned_integer - Prints unsigned integers
+ * print_unsigned_integer - Prints unsigned integers
  * @args_l: argument list
  * Return: count of characters  printed
  */

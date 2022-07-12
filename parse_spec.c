@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * parser - Receives formatted string with or without specifiers.
+ * parse_value - Receives formatted string with or without specifiers.
  * @format: String containing characters and specifiers of characters
  * to be printed.
  * @f_list: List of all functions to handle specifiers.
- * @arg_list: list of argumentents to be printed.
+ * @args: list of argumentents to be printed.
  * Return: Count of printed characters.
  */
 int parse_value(const char *format, fmt_t f_list[], va_list args)
