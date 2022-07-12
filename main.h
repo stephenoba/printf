@@ -9,11 +9,12 @@
  * @spc: specification
  * @f: function pointer
  */
-typedef struct format_t
+struct format_t
 {
 	char *spc;
 	int (*f)(va_list args);
-}fmt_t;
+};
+typedef struct format_t fmt_t;
 
 int _putchar(char c);
 int _printf(const char *format, ...);
