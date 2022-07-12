@@ -1,6 +1,5 @@
 #ifndef MAIN_H
 #define MAiN_H
-#include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>
 
@@ -9,12 +8,11 @@
  * @spc: specification
  * @f: function pointer
  */
-struct format_t
+typedef struct format_t
 {
 	char *spc;
 	int (*f)(va_list args);
-};
-typedef struct format_t fmt_t;
+} fmt_t;
 
 int _putchar(char c);
 int _printf(const char *format, ...);
