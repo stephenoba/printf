@@ -30,7 +30,6 @@ int _printf(const char *format, ...)
 	/* call the parse_value function like vprintf */
 	num_p = parse_value(format, func_l, args);
 	va_end(args);
-	_putchar('\n');
 
 	return (num_p);
 }
