@@ -12,6 +12,10 @@ int print_binary(va_list args_l)
 	char *p, *rev_s;
 
 	n = va_arg(args_l, unsigned int);
+	if (n == 0)
+		return (_putchar('0'));
+	if (n < 1)
+		return (-1);
 	l = base_len(n, 2);
 	p = malloc(sizeof(char) * l + 1);
 	if (p == NULL)
