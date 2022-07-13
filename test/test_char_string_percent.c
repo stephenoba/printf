@@ -12,6 +12,9 @@ int test_print_char(void)
 	int special_character = '\n';
 
 	_printf("%b\n", 98);
+	_printf("print NULL");
+	_printf(NULL);
+	_printf("\n");
 
 	_printf("Print a lowercase character:");
 	_printf("%c", lowercase_char);
